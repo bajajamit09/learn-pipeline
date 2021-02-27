@@ -20,7 +20,7 @@ pipeline {
       steps {
         script { 
           echo "Hello World"
-          sh 'mvn clean package'
+          sh 'cd hello-java/app-src && mvn package' 
         }
       }
     }
